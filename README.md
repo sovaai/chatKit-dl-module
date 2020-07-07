@@ -26,7 +26,7 @@ const dlModule = ckModuleInit(dlConfig)
 * [chatTrack](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTrack.md "Read more");   
 * [reset](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/reset.md "Read more").   
  
- ##
+## DL.ModuleDispatcher
 The function that calls the methods of the DL module.   
 For example:   
 ```
