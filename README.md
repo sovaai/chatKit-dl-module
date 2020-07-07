@@ -11,20 +11,20 @@ const dlModule = ckModuleInit(dlConfig)
  
  # Description
  ## API methods
- 
-* chatInit;
-* chatRequest;
-* setInfo;
-* chatEvent;
-* chatRate;
-* chatTimerAnnouncementsRequest;
-* chatUpdate;
-* notificationDisplay;
-* notificationRequest;
-* liveChatOperatorsCheckRequest;
-* geoLocationRequest;
-* chatTrack;
-* reset.
+ Используемые методы:
+* [chatInit](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatInit.md "Read more");   
+* [chatRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatRequest.md "Read more");   
+* [setInfo](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/setInfo.md "Read more");   
+* [chatEvent](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatEvent.md "Read more");   
+* [chatRate](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatRate.md "Read more");   
+* [chatTimerAnnouncementsRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTimerAnnouncementsRequest%09.md "Read more");   
+* [chatUpdate](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatUpdate.md "Read more");   
+* [notificationDisplay](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/notificationDisplay.md "Read more");   
+* [notificationRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/notificationRequest.md "Read more");   
+* [liveChatOperatorsCheckRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/liveChatOperatorsCheckRequest.md "Read more");   
+* [geoLocationRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/geoLocationRequest.md "Read more");   
+* [chatTrack](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTrack.md "Read more");   
+* [reset](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/reset.md "Read more").   
  
  ## dlConfig
  ```
