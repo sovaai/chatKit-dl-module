@@ -1,24 +1,25 @@
 # chatEvent
 
 ## Description
-Инициализаия диалога   
+
 
 ## Typical data
 ```
-ChatInitData {  clientConfig: RandomContext   
-}
+ ChatEventData {   
+ eventName:   
+DialogLanguageEventsNames   
+  context?: RandomContext   
+}   
 ```
 
 ## Example of data
 ```
  data = {   
-   clientConfig: {   
-     env_site_lang: 'ru'   
-     }   
-   }   
+   eventName: 'ready',   
+} 
    ```
    
 ## Example of call of method
 ```
-moduleDispatcher('chatInit',{clientConfig:{env_site_lang: 'ru'}})
+moduleDispatcher('chatEvent',{eventName: 'ready'})
 ```
