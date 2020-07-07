@@ -1,7 +1,7 @@
 # chatRate
 
 ## Description
-	Рейтинг всего диалога
+Рейтинг всего диалога   
 
 ## Typical data
 ```
