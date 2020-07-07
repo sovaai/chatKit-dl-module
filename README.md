@@ -26,6 +26,15 @@ const dlModule = ckModuleInit(dlConfig)
 * [chatTrack](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTrack.md "Read more");   
 * [reset](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/reset.md "Read more").   
  
+ ##
+The function that calls the methods of the DL module.   
+For example:   
+```
+import moduleInit from 'SOVA-dlModule'   
+const dlModule = moduleInit(dlConfig)   
+dlModule.moduleDispatcher('chatInit', { clientConfig: { siteLang: 'ru' } })
+```
+ 
  ## dlConfig
  ```
  const dlConfig = {
