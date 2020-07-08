@@ -1,24 +1,27 @@
 # chatInit
-
 ## Description
-Инициализаия диалога   
+Инициализаия диалога
+
+## Call of method
+**moduleDispatcher** - метод управление ивентами.   
+moduleDispatcher осуществляет переключение на выбранный метод (*chatInit*) и передает туда необходимые данные. 
+For example:
+```
+moduleDispatcher('chatInit',{clientConfig:{env_site_lang: 'ru'}})
+```
 
 ## Typical data
 ```
-ChatInitData {  clientConfig: RandomContext   
+ChatInitData {  
+  clientConfig: RandomContext   
 }
 ```
 
 ## Example of data
 ```
- data = {   
-   clientConfig: {   
-     env_site_lang: 'ru'   
-     }   
-   }   
-   ```
-   
-## Example of call of method
-```
-moduleDispatcher('chatInit',{clientConfig:{env_site_lang: 'ru'}})
+data = {   
+  clientConfig: {   
+    env_site_lang: 'ru'   
+  }   
+}   
 ```
