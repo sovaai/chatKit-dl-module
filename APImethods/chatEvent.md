@@ -4,7 +4,7 @@
    
 ## Call of method
 **moduleDispatcher** - метод управление ивентами.   
-moduleDispatcher осуществляет переключение на метод *chatEvent* и передает необходимые данные. 
+moduleDispatcher осуществляет переключение на выбранный метод (*chatEvent*) и передает туда необходимые данные. 
 For example:
 ```
 moduleDispatcher('chatEvent',{eventName: 'ready'})
