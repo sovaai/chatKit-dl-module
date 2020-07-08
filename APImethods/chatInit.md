@@ -4,7 +4,7 @@
 
 ## Call of method
 **moduleDispatcher** - метод управление ивентами.   
-moduleDispatcher осуществляет переключение на выбранный метод (*chatInit*) и передает туда необходимые данные. 
+moduleDispatcher осуществляет переключение на выбранный метод (*chatInit*) и передает туда необходимые данные.   
 For example:
 ```
 moduleDispatcher('chatInit',{clientConfig:{env_site_lang: 'ru'}})
