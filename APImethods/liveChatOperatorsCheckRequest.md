@@ -3,17 +3,9 @@
 ## Description
 Запрос на переключение на оператора
 
-## Typical data
-```
--
-```
-
-## Example of data
-```
-- 
-   ```
-   
-## Example of call of method
+## Call of method
+**moduleDispatcher** - метод управление ивентами.   
+moduleDispatcher осуществляет переключение на выбранный метод (*liveChatOperatorsCheckRequest*):
 ```
  moduleDispatcher('liveChatOperatorsCheckRequest')
 ```
