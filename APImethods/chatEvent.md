@@ -5,17 +5,17 @@
 
 ## Typical data
 ```
- ChatEventData {   
- eventName:   
-DialogLanguageEventsNames   
+ChatEventData {   
+  eventName:   
+  DialogLanguageEventsNames   
   context?: RandomContext   
 }   
 ```
 
 ## Example of data
 ```
- data = {   
-   eventName: 'ready',   
+data = {   
+  eventName: 'ready',   
 } 
    ```
    
@@ -23,3 +23,17 @@ DialogLanguageEventsNames
 ```
 moduleDispatcher('chatEvent',{eventName: 'ready'})
 ```
+
+### options of events
+* 'ready'
+* 'inactive'
+* 'rate'
+* 'notification'
+* 'context'
+* 'click'
+* 'mouse'
+* 'cardReady'
+* 'operatorStatus'
+* 'chatState'
+* 'geolocationTimeout'
+* 'geolocationDenied'
