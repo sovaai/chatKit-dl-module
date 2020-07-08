@@ -1,7 +1,14 @@
 # chatEvent
-
 ## Description
-
+Метод, отвечающий за...
+   
+## Call of method
+**moduleDispatcher** - метод управление ивентами.   
+moduleDispatcher осуществляет переключение на метод *chatEvent* и передает необходимые данные. 
+For example:
+```
+moduleDispatcher('chatEvent',{eventName: 'ready'})
+```
 
 ## Typical data
 ```
@@ -32,11 +39,3 @@ data = {
 * 'chatState'
 * 'geolocationTimeout'
 * 'geolocationDenied'
-   
-## Call of method
-**moduleDispatcher** - метод управление ивентами.   
-В moduleDispatcher приходит имя ивента и необходимые данные; происходит переключение на этот метод и передача данных. 
-For example:
-```
-moduleDispatcher('chatEvent',{eventName: 'ready'})
-```
