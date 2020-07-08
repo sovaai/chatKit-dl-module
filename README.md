@@ -1,9 +1,13 @@
 **Dialog Language** (DL) - отдельный модуль, подключаемый к виджету. Он используется для описания сценариев и правил работы с диалогами.
 
 ## Install
-`$ npm i --save Sova-Dialog-Language-Module`   
+Для установки chatKit-dl-module введите следующую команду в терминал:
+```
+$ npm i --save Sova-Dialog-Language-Module
+```
 
 ## Quick start
+Для быстрого старта chatKit-dl-module введите следующую команду в терминал:
 ```
 import ckModuleInit from 'Sova-Dialog-Language-Module'   
 const dlModule = ckModuleInit(dlConfig)   
