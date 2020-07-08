@@ -1,4 +1,4 @@
-text
+**Dialog Language** (DL) - отдельный модуль, подключаемый к виджету. Он используется для описания сценариев и правил работы с диалогами.
 
 ## Install
 `$ npm i --save Sova-Dialog-Language-Module`   
@@ -11,7 +11,7 @@ const dlModule = ckModuleInit(dlConfig)
  
  # Description
  ## API methods
- Используемые методы:
+DL предоставляет следующие API методы:
 * [chatInit](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatInit.md "Read more");   
 * [chatRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatRequest.md "Read more");   
 * [setInfo](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/setInfo.md "Read more");   
@@ -25,10 +25,10 @@ const dlModule = ckModuleInit(dlConfig)
 * [geoLocationRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/geoLocationRequest.md "Read more");   
 * [chatTrack](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTrack.md "Read more");   
 * [reset](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/reset.md "Read more").   
- 
-## DL.ModuleDispatcher
-The function that calls the methods of the DL module.   
-For example:   
+
+ ## DL.ModuleDispatcher
+moduleDispatcher - метод управление ивентами. Он осуществляет переключение на выбранный метод (например, chatInit) и передает туда необходимые данные. 
+Например:
 ```
 import moduleInit from 'SOVA-dlModule'   
 const dlModule = moduleInit(dlConfig)   
@@ -36,6 +36,7 @@ dlModule.moduleDispatcher('chatInit', { clientConfig: { siteLang: 'ru' } })
 ```
  
  ## dlConfig
+ Конфигурационный файл выглядит следующим образом:
  ```
  const dlConfig = {
   info: {
