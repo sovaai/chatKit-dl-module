@@ -1,19 +1,11 @@
 # reset
 
 ## Description
-Запрос на отображение нотификации
+метод, ...
 
-## Typical data
-```
--
-```
-
-## Example of data
-```
--
-   ```
-   
-## Example of call of method
+## Call of method
+**moduleDispatcher** - метод управление ивентами.   
+moduleDispatcher осуществляет переключение на выбранный метод (*reset*):
 ```
 moduleDispatcher('reset')
 ```
