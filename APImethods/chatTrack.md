@@ -1,11 +1,25 @@
 # chatTrack
-
 ## Description
+Метод, отвечающий за...
 
+## Call of method
+**moduleDispatcher** - метод управление ивентами.   
+moduleDispatcher осуществляет переключение на выбранный метод (*chatEvent*) и передает туда необходимые данные.   
+For example:
+```
+moduleDispatcher('chatTrack',{ 
+  action: 'click',   
+  args: {   
+    id: '1',   
+    url: 'nano.com',   
+    text: 'helloWorld'   
+  }
+})   
+```
 
 ## Typical data
 ```
-  ChatTrackData {   
+ChatTrackData {   
   action: string   
   args: {   
     id: string   
@@ -23,16 +37,20 @@ data = {
     id: '1',   
     url: 'nano.com',   
     text: 'helloWorld'   
-    }   
+  }   
 }    
 ```
-   
-## Example of call of method
-```
- moduleDispatcher('chatTrack',{ action: 'click',   
-  args: {   
-    id: '1',   
-    url: 'nano.com',   
-    text: 'helloWorld'   
-    }})   
-```
+
+### options of actions
+* 'ready'
+* 'inactive'
+* 'rate'
+* 'notification'
+* 'context'
+* 'click'
+* 'mouse'
+* 'cardReady'
+* 'operatorStatus'
+* 'chatState'
+* 'geolocationTimeout'
+* 'geolocationDenied'
