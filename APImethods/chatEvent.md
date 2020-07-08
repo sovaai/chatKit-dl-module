@@ -17,11 +17,6 @@ ChatEventData {
 data = {   
   eventName: 'ready',   
 } 
-   ```
-   
-## Example of call of method
-```
-moduleDispatcher('chatEvent',{eventName: 'ready'})
 ```
 
 ### options of events
@@ -37,3 +32,10 @@ moduleDispatcher('chatEvent',{eventName: 'ready'})
 * 'chatState'
 * 'geolocationTimeout'
 * 'geolocationDenied'
+   
+## Call of method
+moduleDispatcher - метод управление ивентами. В moduleDispatcher приходит имя ивента и необходимые данные; происходит переключение на этот метод и передача данных. 
+For example:
+```
+moduleDispatcher('chatEvent',{eventName: 'ready'})
+```
