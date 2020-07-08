@@ -1,7 +1,14 @@
 # chatRequest
-
 ## Description
 Отправка сообщений пользователем
+
+## Call of method
+**moduleDispatcher** - метод управление ивентами.   
+moduleDispatcher осуществляет переключение на выбранный метод (*chatRequest*) и передает туда необходимые данные.   
+For example:
+```
+moduleDispatcher('chatRequest',{text:'Hello World!!'})
+```
 
 ## Typical data
 ```
@@ -14,11 +21,6 @@ ChatRequestData {
 ## Example of data
 ```
 data = {   
-   text: 'Hello World!!'   
+  text: 'Hello World!!'   
 }   
-   ```
-   
-## Example of call of method
-```
- moduleDispatcher('chatRequest',{text:'Hello World!!'})
 ```
