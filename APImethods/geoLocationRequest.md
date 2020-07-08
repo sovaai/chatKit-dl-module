@@ -3,17 +3,10 @@
 ## Description
 Запрос геолокации
 
-## Typical data
-```
--
-```
+## Call of method
+**moduleDispatcher** - метод управление ивентами.   
+moduleDispatcher осуществляет переключение на выбранный метод (*chatEvent*):
 
-## Example of data
-```
-- 
-   ```
-   
-## Example of call of method
 ```
 moduleDispatcher('geoLocationRequest')
 ```
