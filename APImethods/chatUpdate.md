@@ -1,19 +1,10 @@
 # chatUpdate
-
 ## Description
+Обновление виджета
 
-
-## Typical data
-```
--
-```
-
-## Example of data
-```
-- 
-   ```
-   
-## Example of call of method
+## Call of method
+**moduleDispatcher** - метод управление ивентами.   
+moduleDispatcher осуществляет переключение на выбранный метод (*chatUpdate*):
 ```
 moduleDispatcher('chatUpdate')
 ```
