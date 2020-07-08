@@ -4,7 +4,7 @@
 
 ## Call of method
 **moduleDispatcher** - метод управление ивентами.   
-moduleDispatcher осуществляет переключение на выбранный метод (*chatRate*) и передает туда необходимые данные. 
+moduleDispatcher осуществляет переключение на выбранный метод (*chatRate*) и передает туда необходимые данные.   
 For example:
 ```
 moduleDispatcher('chatRate',{rating: 5})   
