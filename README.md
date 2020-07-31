@@ -1,21 +1,21 @@
-**Dialog Language** (DL) - отдельный модуль, подключаемый к виджету. Он используется для описания сценариев и правил работы с диалогами.
+**Dialog Language** (DL) is separate module that connects to the widget. It is used to describe scripts and dialog rules.
 
 ## Install
-Для установки chatKit-dl-module введите следующую команду в терминал:
+For install chatKit-dl-module enter next command in the terminal:
 ```
 $ npm i --save Sova-Dialog-Language-Module
 ```
 
 ## Quick start
-Для быстрого старта chatKit-dl-module введите следующую команду в терминал:
+For quick start chatKit-dl-module enter next command in the terminal:
 ```
 import ckModuleInit from 'Sova-Dialog-Language-Module'   
 const dlModule = ckModuleInit(dlConfig)   
  ```
  
- # Description
- ## API methods
-DL предоставляет следующие API методы:
+# Description
+## API methods
+DL has next API methods:
 * [chatInit](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatInit.md "Read more");   
 * [chatRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatRequest.md "Read more");   
 * [setInfo](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/setInfo.md "Read more");   
@@ -30,17 +30,17 @@ DL предоставляет следующие API методы:
 * [chatTrack](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTrack.md "Read more");   
 * [reset](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/reset.md "Read more").   
 
- ## DL.ModuleDispatcher
-moduleDispatcher - метод управление ивентами. Он осуществляет переключение на выбранный метод (например, chatInit) и передает туда необходимые данные. 
-Например:
+## DL.ModuleDispatcher
+moduleDispatcher - method of event management. ModuleDispatcher select method and transmits necessary data to it.
+For example:
 ```
 import moduleInit from 'SOVA-dlModule'   
 const dlModule = moduleInit(dlConfig)   
 dlModule.moduleDispatcher('chatInit', { clientConfig: { siteLang: 'ru' } })
 ```
  
- ## dlConfig
- Конфигурационный файл выглядит следующим образом:
+## dlConfig
+Configuration file includes:
  ```
  const dlConfig = {
   info: {
