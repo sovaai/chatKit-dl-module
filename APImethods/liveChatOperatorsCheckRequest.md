@@ -1,11 +1,10 @@
 # liveChatOperatorsCheckRequest
-
-## Description
-Запрос на переключение на оператора
+Request to switch to operator
 
 ## Call of method
-**moduleDispatcher** - метод управление ивентами.   
-moduleDispatcher осуществляет переключение на выбранный метод (*liveChatOperatorsCheckRequest*):
-```
+`moduleDispatcher` - method of event management.   
+`moduleDispatcher` switches to the selected method `liveChatOperatorsCheckRequest` and transmits next data to that:
+
+```javascript
  moduleDispatcher('liveChatOperatorsCheckRequest')
 ```
