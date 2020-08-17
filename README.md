@@ -32,7 +32,7 @@ DL has next API methods:
 
 ## DL.ModuleDispatcher
 `moduleDispatcher` - method of event management.   
-`moduleDispatcher` select method and transmits necessary data to it.
+`moduleDispatcher` select method and transmits necessary data to it.  
 For example:
 ```javascript
 import moduleInit from 'SOVA-dlModule'   
