@@ -1,12 +1,12 @@
 # chatTrack
-## Description
-Метод, отвечающий за...
+Show specific text when you hover over a link
 
 ## Call of method
-**moduleDispatcher** - метод управление ивентами.   
-moduleDispatcher осуществляет переключение на выбранный метод (*chatEvent*) и передает туда необходимые данные.   
+`moduleDispatcher` - method of event management.   
+`moduleDispatcher` switches to the selected method `chatTrack` and transmits necessary data to that.   
+
 For example:
-```
+```javascript
 moduleDispatcher('chatTrack',{ 
   action: 'click',   
   args: {   
@@ -18,7 +18,7 @@ moduleDispatcher('chatTrack',{
 ```
 
 ## Typical data
-```
+```javascript
 ChatTrackData {   
   action: string   
   args: {   
@@ -30,7 +30,7 @@ ChatTrackData {
 ```
 
 ## Example of data
-```
+```javascript
 data = {   
   action: 'click',   
   args: {   
@@ -42,15 +42,17 @@ data = {
 ```
 
 ### options of actions
-* 'ready'
-* 'inactive'
-* 'rate'
-* 'notification'
-* 'context'
-* 'click'
-* 'mouse'
-* 'cardReady'
-* 'operatorStatus'
-* 'chatState'
-* 'geolocationTimeout'
-* 'geolocationDenied'
+| event                    |                      |
+|--------------------------|----------------------| 
+| 'ready'                  |                      |
+| 'inactive'               |                      |
+| 'rate'                   |                      |
+| 'notification'           |                      |
+| 'context'                |                      |
+| 'click'                  |                      |
+| 'mouse'                  |                      |
+| 'cardReady'              |                      |
+| 'operatorStatus'         |                      |
+| 'chatState'              |                      |
+| 'geolocationTimeout'     |                      |
+| 'geolocationDenied'      |                      |
