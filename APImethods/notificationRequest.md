@@ -1,11 +1,10 @@
 # notificationRequest
-
-## Description
-Запрос на отображение нотификации
+Notification display request
    
 ## Call of method
-**moduleDispatcher** - метод управление ивентами.   
-moduleDispatcher осуществляет переключение на выбранный метод (*notificationRequest*):  
-```
+`moduleDispatcher` - method of event management.   
+`moduleDispatcher` switches to the selected method `notificationRequest` and transmits next data to that:  
+
+```javascript
 moduleDispatcher('notificationRequest')
 ```
