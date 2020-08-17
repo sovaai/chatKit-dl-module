@@ -1,5 +1,5 @@
 # chatRequest
-Sending sser messages
+Sending user messages
 
 ## Call of method
 `moduleDispatcher` - method of event management.   
