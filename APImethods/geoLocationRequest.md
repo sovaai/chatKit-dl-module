@@ -1,11 +1,9 @@
 # geoLocationRequest
-
-## Description
-Запрос геолокации
+Geolocation request
 
 ## Call of method
-**moduleDispatcher** - метод управление ивентами.   
-moduleDispatcher осуществляет переключение на выбранный метод (*geoLocationRequest*):
+`moduleDispatcher` - method of event management.   
+`moduleDispatcher` switches to the selected method `geoLocationRequest` and transmits necessary data to that:  
 
 ```
 moduleDispatcher('geoLocationRequest')
