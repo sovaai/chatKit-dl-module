@@ -1,11 +1,10 @@
 # reset
-
-## Description
-метод, ...
+Reset dialogue
 
 ## Call of method
-**moduleDispatcher** - метод управление ивентами.   
-moduleDispatcher осуществляет переключение на выбранный метод (*reset*):
-```
+`moduleDispatcher` - method of event management.   
+`moduleDispatcher` switches to the selected method `reset` and transmits necessary next to that:  
+
+```javascript
 moduleDispatcher('reset')
 ```
