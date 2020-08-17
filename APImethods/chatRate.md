@@ -1,24 +1,24 @@
 # chatRate
-## Description
-Проставление рейтинга всему диалогу
+Rating of the all dialogue
 
 ## Call of method
-**moduleDispatcher** - метод управление ивентами.   
-moduleDispatcher осуществляет переключение на выбранный метод (*chatRate*) и передает туда необходимые данные.   
+`moduleDispatcher` - method of event management.   
+`moduleDispatcher` witches to the selected method `chatRate` and transmits necessary data to that.   
+
 For example:
-```
+```javascript
 moduleDispatcher('chatRate',{rating: 5})   
 ```
 
 ## Typical data
-```
+```javascript
 ChatRateData {   
   rating: number   
 }   
 ```
 
 ## Example of data
-```
+```javascript
 data = {   
   rating: 5,   
 }   
