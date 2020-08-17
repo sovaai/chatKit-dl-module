@@ -3,7 +3,7 @@
 ## Install
 For install chatKit-dl-module enter next command:
 ```javascript
-$ npm i --save Sova-Dialog-Language-Module
+npm i --save Sova-Dialog-Language-Module
 ```
 
 ## Quick start
@@ -17,27 +17,27 @@ const dlModule = ckModuleInit(dlConfig)
 ## API methods
 DL has next API methods:
 
-| API method                                                                                                                                 |                     | 
-|--------------------------------------------------------------------------------------------------------------------------------------------|---------------------| 
-| [название](ссылка "Read about this method")                                                                                                | описание  |
-| [chatInit](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatInit.md "Read about this methode")                       | описание  |
-| [chatRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatRequest.md "Read about this method")                  | описание  |
-| [setInfo](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/setInfo.md "Read about this method")                          | описание  |
-| [chatEvent](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatEvent.md "Read about this method")                      | описание  |
-| [chatRate](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatRate.md "Read about this method")                        | описание  |
-| [chatTimerAnnouncementsRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTimerAnnouncementsRequest.md "Read about this method")  | описание  |
-| [chatUpdate](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatUpdate.md "Read about this method")                    | описание  |
-| [notificationDisplay](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/notificationDisplay.md "Read about this method")  | описание  |
-| [notificationRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/notificationRequest.md "Read about this method")  | описание  |
-| [liveChatOperatorsCheckRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/liveChatOperatorsCheckRequest.md "Read about this method")  | описание  |
-| [geoLocationRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/geoLocationRequest.md "Read about this method")    | описание  |
-| [chatTrack](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTrack.md "Read about this method")                      | описание  |
-| [reset](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/reset.md "Read about this method")                              | описание  |
+| API method                                                                                                                                |                                  | 
+|-------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------| 
+| [chatInit](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatInit.md "Read about this methode")                      | Dialog Initialization            |
+| [chatRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatRequest.md "Read about this method")                 | Sending user messages            |
+| [setInfo](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/setInfo.md "Read about this method")                         | Get information about events     |
+| [chatEvent](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatEvent.md "Read about this method")                     | Chat events                      |
+| [chatRate](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatRate.md "Read about this method")                       | Rating of the all dialogue       |
+| [chatTimerAnnouncementsRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTimerAnnouncementsRequest.md "Read about this method") | Announcement activation by timer  |
+| [chatUpdate](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatUpdate.md "Read about this method")                   | Updating the widget              |
+| [notificationDisplay](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/notificationDisplay.md "Read about this method") | Displaying a specific notification  |
+| [notificationRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/notificationRequest.md "Read about this method") | Notification display request     |
+| [liveChatOperatorsCheckRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/liveChatOperatorsCheckRequest.md "Read about this method")  | Request to switch to operator  |
+| [geoLocationRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/geoLocationRequest.md "Read about this method")   | Geolocation request              |
+| [chatTrack](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTrack.md "Read about this method")                     | Show specific text when you hover over a link  |
+| [reset](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/reset.md "Read about this method")                             | Reset dialogue                   |
 
 
 ## DL.ModuleDispatcher
 `moduleDispatcher` - method of event management.   
 `moduleDispatcher` select method and transmits necessary data to it.  
+
 For example:
 ```javascript
 import moduleInit from 'SOVA-dlModule'   
