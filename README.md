@@ -1,14 +1,14 @@
 **Dialog Language** (DL) is separate module that connects to the widget. It is used to describe scripts and dialog rules.
 
 ## Install
-For install chatKit-dl-module enter next command in the terminal:
-```
+For install chatKit-dl-module enter next command:
+```javascript
 $ npm i --save Sova-Dialog-Language-Module
 ```
 
 ## Quick start
-For quick start chatKit-dl-module enter next command in the terminal:
-```
+For quick start chatKit-dl-module enter next command:
+```javascript
 import ckModuleInit from 'Sova-Dialog-Language-Module'   
 const dlModule = ckModuleInit(dlConfig)   
  ```
@@ -31,9 +31,10 @@ DL has next API methods:
 * [reset](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/reset.md "Read more").   
 
 ## DL.ModuleDispatcher
-moduleDispatcher - method of event management. ModuleDispatcher select method and transmits necessary data to it.
+`moduleDispatcher` - method of event management.   
+`moduleDispatcher` select method and transmits necessary data to it.
 For example:
-```
+```javascript
 import moduleInit from 'SOVA-dlModule'   
 const dlModule = moduleInit(dlConfig)   
 dlModule.moduleDispatcher('chatInit', { clientConfig: { siteLang: 'ru' } })
@@ -41,7 +42,7 @@ dlModule.moduleDispatcher('chatInit', { clientConfig: { siteLang: 'ru' } })
  
 ## dlConfig
 Configuration file includes:
- ```
+ ```javascript
  const dlConfig = {
   info: {
     uuid: string,
