@@ -1,10 +1,10 @@
 # chatUpdate
-## Description
-Обновление виджета
+Updating the widget
 
 ## Call of method
-**moduleDispatcher** - метод управление ивентами.   
-moduleDispatcher осуществляет переключение на выбранный метод (*chatUpdate*):
+`moduleDispatcher` - method of event management.   
+`moduleDispatcher` switches to the selected method  `chatUpdate`  nd transmits necessary next to that:
+
 ```
 moduleDispatcher('chatUpdate')
 ```
