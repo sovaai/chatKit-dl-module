@@ -16,19 +16,24 @@ const dlModule = ckModuleInit(dlConfig)
 # Description
 ## API methods
 DL has next API methods:
-* [chatInit](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatInit.md "Read more");   
-* [chatRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatRequest.md "Read more");   
-* [setInfo](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/setInfo.md "Read more");   
-* [chatEvent](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatEvent.md "Read more");   
-* [chatRate](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatRate.md "Read more");   
-* [chatTimerAnnouncementsRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTimerAnnouncementsRequest%09.md "Read more");   
-* [chatUpdate](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatUpdate.md "Read more");   
-* [notificationDisplay](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/notificationDisplay.md "Read more");   
-* [notificationRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/notificationRequest.md "Read more");   
-* [liveChatOperatorsCheckRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/liveChatOperatorsCheckRequest.md "Read more");   
-* [geoLocationRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/geoLocationRequest.md "Read more");   
-* [chatTrack](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTrack.md "Read more");   
-* [reset](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/reset.md "Read more").   
+
+| API method                                                                                                                                 |                     | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|---------------------| 
+| [название](ссылка "Read about this method")                                                                                                | описание  |
+| [chatInit](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatInit.md "Read about this methode")                       | описание  |
+| [chatRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatRequest.md "Read about this method")                  | описание  |
+| [setInfo](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/setInfo.md "Read about this method")                          | описание  |
+| [chatEvent](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatEvent.md "Read about this method")                      | описание  |
+| [chatRate](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatRate.md "Read about this method")                        | описание  |
+| [chatTimerAnnouncementsRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTimerAnnouncementsRequest.md "Read about this method")  | описание  |
+| [chatUpdate](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatUpdate.md "Read about this method")                    | описание  |
+| [notificationDisplay](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/notificationDisplay.md "Read about this method")  | описание  |
+| [notificationRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/notificationRequest.md "Read about this method")  | описание  |
+| [liveChatOperatorsCheckRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/liveChatOperatorsCheckRequest.md "Read about this method")  | описание  |
+| [geoLocationRequest](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/geoLocationRequest.md "Read about this method")    | описание  |
+| [chatTrack](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/chatTrack.md "Read about this method")                      | описание  |
+| [reset](https://github.com/sovaai/chatKit-dl-module/blob/master/APImethods/reset.md "Read about this method")                              | описание  |
+
 
 ## DL.ModuleDispatcher
 `moduleDispatcher` - method of event management.   
