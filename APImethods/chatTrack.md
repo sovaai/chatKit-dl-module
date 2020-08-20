@@ -44,15 +44,14 @@ data = {
 ### options of actions
 | event                    |                      |
 |--------------------------|----------------------| 
-| 'ready'                  |                      |
-| 'inactive'               |                      |
-| 'rate'                   |                      |
-| 'notification'           |                      |
-| 'context'                |                      |
-| 'click'                  |                      |
-| 'mouse'                  |                      |
-| 'cardReady'              |                      |
-| 'operatorStatus'         |                      |
-| 'chatState'              |                      |
-| 'geolocationTimeout'     |                      |
-| 'geolocationDenied'      |                      |
+| 'ready'                  | chat is ready        |
+| 'inactive'               | user is active       |
+| 'rate'                   | rate message         |
+| 'notification'           | send notification    |
+| 'context'                | change chat context  |
+| 'click'                  | mouse click          |
+| 'mouse'                  | move mouse           |
+| 'operatorStatus'         | operator status      |
+| 'chatState'              | chat state           |
+| 'geolocationTimeout'     | geolocation time out |
+| 'geolocationDenied'      | geolocation denied   |
