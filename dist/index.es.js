@@ -538,7 +538,12 @@ var chatTimerAnnouncementsRequest = function (module, data) { return __awaiter(v
     });
 }); };
 
-var _a = { "env": { "INF_API_URL": "https://biz.nanosemantics.ru/api/2.1/json", "GEO_LACATION_API_URL": "https://ipapi.co/json/", "LIVE_CHAT_OPERATORS_API_URL": "https://chat-dev.nanosemantics.ru/chat/operators/online?url=https://chat-dev.nanosemantics.ru/iframe-transport.html/&referrer", "NOTIFICATIONS_API_URL": "https://cdn.nanosemantics.ru/notify/", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "https://capi-dev.nanosemantics.ai", "CHAT_UPDATE_API_URL": "https://capi.nanosemantics.ai" } }.env, INF_API_URL = _a.INF_API_URL, GEO_LACATION_API_URL = _a.GEO_LACATION_API_URL, LIVE_CHAT_OPERATORS_API_URL = _a.LIVE_CHAT_OPERATORS_API_URL, NOTIFICATIONS_API_URL = _a.NOTIFICATIONS_API_URL, CHAT_TIMER_ANNOUNCEMENTS_API_URL = _a.CHAT_TIMER_ANNOUNCEMENTS_API_URL, CHAT_UPDATE_API_URL = _a.CHAT_UPDATE_API_URL;
+var INF_API_URL = { "env": { "INF_API_URL": "", "GEO_LACATION_API_URL": "", "LIVE_CHAT_OPERATORS_API_URL": "", "NOTIFICATIONS_API_URL": "", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "", "CHAT_UPDATE_API_URL": "" } }.env.INF_API_URL;
+var GEO_LACATION_API_URL = { "env": { "INF_API_URL": "", "GEO_LACATION_API_URL": "", "LIVE_CHAT_OPERATORS_API_URL": "", "NOTIFICATIONS_API_URL": "", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "", "CHAT_UPDATE_API_URL": "" } }.env.GEO_LACATION_API_URL;
+var LIVE_CHAT_OPERATORS_API_URL = { "env": { "INF_API_URL": "", "GEO_LACATION_API_URL": "", "LIVE_CHAT_OPERATORS_API_URL": "", "NOTIFICATIONS_API_URL": "", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "", "CHAT_UPDATE_API_URL": "" } }.env.LIVE_CHAT_OPERATORS_API_URL;
+var NOTIFICATIONS_API_URL = { "env": { "INF_API_URL": "", "GEO_LACATION_API_URL": "", "LIVE_CHAT_OPERATORS_API_URL": "", "NOTIFICATIONS_API_URL": "", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "", "CHAT_UPDATE_API_URL": "" } }.env.NOTIFICATIONS_API_URL;
+var CHAT_TIMER_ANNOUNCEMENTS_API_URL = { "env": { "INF_API_URL": "", "GEO_LACATION_API_URL": "", "LIVE_CHAT_OPERATORS_API_URL": "", "NOTIFICATIONS_API_URL": "", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "", "CHAT_UPDATE_API_URL": "" } }.env.CHAT_TIMER_ANNOUNCEMENTS_API_URL;
+var CHAT_UPDATE_API_URL = { "env": { "INF_API_URL": "", "GEO_LACATION_API_URL": "", "LIVE_CHAT_OPERATORS_API_URL": "", "NOTIFICATIONS_API_URL": "", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "", "CHAT_UPDATE_API_URL": "" } }.env.CHAT_UPDATE_API_URL;
 var DialogLanguageModule = /** @class */ (function () {
     function DialogLanguageModule(config) {
         var _this = this;

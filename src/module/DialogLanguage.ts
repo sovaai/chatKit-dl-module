@@ -42,14 +42,12 @@ import {
   chatTimerAnnouncementsRequest,
   reset,
 } from '../events/moduleEvents'
-const {
-  INF_API_URL,
-  GEO_LACATION_API_URL,
-  LIVE_CHAT_OPERATORS_API_URL,
-  NOTIFICATIONS_API_URL,
-  CHAT_TIMER_ANNOUNCEMENTS_API_URL,
-  CHAT_UPDATE_API_URL,
-} = process.env
+const INF_API_URL = process.env.INF_API_URL
+const GEO_LACATION_API_URL = process.env.GEO_LACATION_API_URL
+const LIVE_CHAT_OPERATORS_API_URL = process.env.LIVE_CHAT_OPERATORS_API_URL
+const NOTIFICATIONS_API_URL = process.env.NOTIFICATIONS_API_URL
+const CHAT_TIMER_ANNOUNCEMENTS_API_URL = process.env.CHAT_TIMER_ANNOUNCEMENTS_API_URL
+const CHAT_UPDATE_API_URL = process.env.CHAT_UPDATE_API_URL
 class DialogLanguageModule {
   name: string
   api: DialogLanguageApi
