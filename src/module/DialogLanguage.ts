@@ -42,21 +42,25 @@ import {
   chatTimerAnnouncementsRequest,
   reset,
 } from '../events/moduleEvents'
-const INF_API_URL = process.env.INF_API_URL
-const GEO_LACATION_API_URL = process.env.GEO_LACATION_API_URL
-const LIVE_CHAT_OPERATORS_API_URL = process.env.LIVE_CHAT_OPERATORS_API_URL
-const NOTIFICATIONS_API_URL = process.env.NOTIFICATIONS_API_URL
-const CHAT_TIMER_ANNOUNCEMENTS_API_URL = process.env.CHAT_TIMER_ANNOUNCEMENTS_API_URL
-const CHAT_UPDATE_API_URL = process.env.CHAT_UPDATE_API_URL
+const {
+  INF_API_URL,
+  GEO_LACATION_API_URL,
+  LIVE_CHAT_OPERATORS_API_URL,
+  NOTIFICATIONS_API_URL,
+  CHAT_TIMER_ANNOUNCEMENTS_API_URL,
+  CHAT_UPDATE_API_URL,
+} = process.env
 class DialogLanguageModule {
   name: string
+  ckStore?: any 
   api: DialogLanguageApi
   info: DialogLanguageInfo
   moduleEvents: ModuleEvents
   uiEvents: UiEvents
   constructor(config: DialogLanguageConfig) {
-    const { info, api, moduleEvents, uiEvents } = config
+    const { info, api, moduleEvents, uiEvents, ckStore } = config
     this.name = 'dialogLanguage'
+    this.ckStore = ckStore
     this.info = {
       cuid: '',
       uuid: info.uuid,
@@ -110,12 +114,12 @@ class DialogLanguageModule {
     event === 'reset' && (await this.moduleEvents[event](this, data as ChatInitData))
   }
   uiDispatcher = (event: UiEventsNames, data: UiEventsData) => {
-    event === 'sendMessage' && this.uiEvents[event](data as SendMessageData)
+    event === 'sendMessage' && this.uiEvents[event](data as SendMessageData, this.ckStore)
     event === 'uiManagment' &&
-      this.uiEvents[event]((data as UIManagmentData).uiManagmentEvent, (data as UIManagmentData).data)
+      this.uiEvents[event]((data as UIManagmentData).uiManagmentEvent, (data as UIManagmentData).data, this.ckStore)
     event === 'notifications' &&
-      this.uiEvents[event]((data as NotificationsData).notificationEvent, (data as NotificationsData).data)
-    event === 'modules' && this.uiEvents[event]((data as ModulesData).modulesEvent, (data as ModulesData).data)
+      this.uiEvents[event]((data as NotificationsData).notificationEvent, (data as NotificationsData).data, this.ckStore)
+    event === 'modules' && this.uiEvents[event]((data as ModulesData).modulesEvent, (data as ModulesData).data, this.ckStore)
   }
 }
 export { DialogLanguageModule }

@@ -217,6 +217,7 @@ var resultControl = function (module, result) { return __awaiter(void 0, void 0,
                     text: text,
                     sender: 'request',
                     showRate: (_c = result === null || result === void 0 ? void 0 : result.text) === null || _c === void 0 ? void 0 : _c.showRate,
+                    module: module.name,
                 };
                 wflagHideReply = ((_d = result.context) === null || _d === void 0 ? void 0 : _d.wflag_hide_reply) !== '1';
                 _a = wflagHideReply && text;
@@ -310,7 +311,7 @@ var chatInit = function (module, data) { return __awaiter(void 0, void 0, void 0
                         events: result.events,
                     };
                 module.moduleDispatcher('setInfo', info);
-                module.moduleDispatcher('chatEvent', { eventName: 'ready', context: {} });
+                !((result === null || result === void 0 ? void 0 : result.cuid) === cuid) && module.moduleDispatcher('chatEvent', { eventName: 'ready', context: {} });
                 return [2 /*return*/, resultControl(module, result)];
         }
     });
@@ -360,6 +361,7 @@ var chatEvent = function (module, data) { return __awaiter(void 0, void 0, void 
                 return [4 /*yield*/, postFetch(body, url)];
             case 1:
                 result = _b.sent();
+                console.log(result);
                 resultControl(module, result);
                 return [2 /*return*/];
         }
@@ -538,12 +540,7 @@ var chatTimerAnnouncementsRequest = function (module, data) { return __awaiter(v
     });
 }); };
 
-var INF_API_URL = { "env": { "INF_API_URL": "", "GEO_LACATION_API_URL": "", "LIVE_CHAT_OPERATORS_API_URL": "", "NOTIFICATIONS_API_URL": "", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "", "CHAT_UPDATE_API_URL": "" } }.env.INF_API_URL;
-var GEO_LACATION_API_URL = { "env": { "INF_API_URL": "", "GEO_LACATION_API_URL": "", "LIVE_CHAT_OPERATORS_API_URL": "", "NOTIFICATIONS_API_URL": "", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "", "CHAT_UPDATE_API_URL": "" } }.env.GEO_LACATION_API_URL;
-var LIVE_CHAT_OPERATORS_API_URL = { "env": { "INF_API_URL": "", "GEO_LACATION_API_URL": "", "LIVE_CHAT_OPERATORS_API_URL": "", "NOTIFICATIONS_API_URL": "", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "", "CHAT_UPDATE_API_URL": "" } }.env.LIVE_CHAT_OPERATORS_API_URL;
-var NOTIFICATIONS_API_URL = { "env": { "INF_API_URL": "", "GEO_LACATION_API_URL": "", "LIVE_CHAT_OPERATORS_API_URL": "", "NOTIFICATIONS_API_URL": "", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "", "CHAT_UPDATE_API_URL": "" } }.env.NOTIFICATIONS_API_URL;
-var CHAT_TIMER_ANNOUNCEMENTS_API_URL = { "env": { "INF_API_URL": "", "GEO_LACATION_API_URL": "", "LIVE_CHAT_OPERATORS_API_URL": "", "NOTIFICATIONS_API_URL": "", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "", "CHAT_UPDATE_API_URL": "" } }.env.CHAT_TIMER_ANNOUNCEMENTS_API_URL;
-var CHAT_UPDATE_API_URL = { "env": { "INF_API_URL": "", "GEO_LACATION_API_URL": "", "LIVE_CHAT_OPERATORS_API_URL": "", "NOTIFICATIONS_API_URL": "", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "", "CHAT_UPDATE_API_URL": "" } }.env.CHAT_UPDATE_API_URL;
+var _a = { "env": { "INF_API_URL": "", "GEO_LACATION_API_URL": "", "LIVE_CHAT_OPERATORS_API_URL": "", "NOTIFICATIONS_API_URL": "", "CHAT_TIMER_ANNOUNCEMENTS_API_URL": "", "CHAT_UPDATE_API_URL": "" } }.env, INF_API_URL = _a.INF_API_URL, GEO_LACATION_API_URL = _a.GEO_LACATION_API_URL, LIVE_CHAT_OPERATORS_API_URL = _a.LIVE_CHAT_OPERATORS_API_URL, NOTIFICATIONS_API_URL = _a.NOTIFICATIONS_API_URL, CHAT_TIMER_ANNOUNCEMENTS_API_URL = _a.CHAT_TIMER_ANNOUNCEMENTS_API_URL, CHAT_UPDATE_API_URL = _a.CHAT_UPDATE_API_URL;
 var DialogLanguageModule = /** @class */ (function () {
     function DialogLanguageModule(config) {
         var _this = this;
@@ -649,15 +646,16 @@ var DialogLanguageModule = /** @class */ (function () {
             });
         }); };
         this.uiDispatcher = function (event, data) {
-            event === 'sendMessage' && _this.uiEvents[event](data);
+            event === 'sendMessage' && _this.uiEvents[event](data, _this.ckStore);
             event === 'uiManagment' &&
-                _this.uiEvents[event](data.uiManagmentEvent, data.data);
+                _this.uiEvents[event](data.uiManagmentEvent, data.data, _this.ckStore);
             event === 'notifications' &&
-                _this.uiEvents[event](data.notificationEvent, data.data);
-            event === 'modules' && _this.uiEvents[event](data.modulesEvent, data.data);
+                _this.uiEvents[event](data.notificationEvent, data.data, _this.ckStore);
+            event === 'modules' && _this.uiEvents[event](data.modulesEvent, data.data, _this.ckStore);
         };
-        var info = config.info, api = config.api, moduleEvents = config.moduleEvents, uiEvents = config.uiEvents;
+        var info = config.info, api = config.api, moduleEvents = config.moduleEvents, uiEvents = config.uiEvents, ckStore = config.ckStore;
         this.name = 'dialogLanguage';
+        this.ckStore = ckStore;
         this.info = {
             cuid: '',
             uuid: info.uuid,

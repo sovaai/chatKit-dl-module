@@ -4,6 +4,7 @@ import { UiEventsNames, UiEventsData } from "../@types/uiEvents";
 import { DialogLanguageConfig as DialogLanguageConfig$0 } from './@types/dialogLanguage';
 declare class DialogLanguageModule {
     name: string;
+    ckStore?: any;
     api: DialogLanguageApi;
     info: DialogLanguageInfo;
     moduleEvents: ModuleEvents;

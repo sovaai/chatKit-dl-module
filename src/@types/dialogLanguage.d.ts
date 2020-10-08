@@ -80,13 +80,14 @@ export interface ModuleEvents {
   reset: (module: DialogLanguageModule, data: ChatInitData) => void
 }
 export interface UiEvents {
-  sendMessage: (data: SendMessageData) => void
-  uiManagment: (uiManagmentEvent: uiManagmentEvents, data: UIManagmentData) => void
-  notifications: (notificationsEvent: NotificationsEvents, data: NotificationsData) => void
-  modules: (modulesEvent: ModulesEvents, data: ModulesData) => void
+  sendMessage: (data: SendMessageData, ckStore?: any) => void
+  uiManagment: (uiManagmentEvent: uiManagmentEvents, data: UIManagmentData, ckStore?: any) => void
+  notifications: (notificationsEvent: NotificationsEvents, data: NotificationsData, ckStore?: any) => void
+  modules: (modulesEvent: ModulesEvents, data: ModulesData, ckStore?: any) => void
 }
 export interface DialogLanguageModule extends CKModule {
   info: DialogLanguageInfo
+  ckStore?: any
   moduleEvents: ModuleEvents
   api: DialogLanguageApi
   uiEvents: UiEvents
@@ -106,4 +107,5 @@ export interface DialogLanguageConfig {
   }
   moduleEvents?: ModuleEvents
   uiEvents?: UiEventsList
+  ckStore?: any
 }

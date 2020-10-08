@@ -9,6 +9,7 @@ export const resultControl = async (module: DialogLanguageModule, result: any) =
       text: text,
       sender: 'request',
       showRate: result?.text?.showRate,
+      module: module.name,
     }
     const wflagHideReply = result.context?.wflag_hide_reply !== '1'
     wflagHideReply && text && (await module.uiDispatcher('sendMessage', data))

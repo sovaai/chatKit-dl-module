@@ -55,7 +55,7 @@ export const chatInit = async (module: DialogLanguageModule, data: ChatInitData)
           events: result.events,
         }
   module.moduleDispatcher('setInfo', info)
-  module.moduleDispatcher('chatEvent', { eventName: 'ready', context: {} })
+  !(result?.cuid === cuid) && module.moduleDispatcher('chatEvent', { eventName: 'ready', context: {} })
   return resultControl(module, result)
 }
 
@@ -93,6 +93,7 @@ export const chatEvent = async (module: DialogLanguageModule, data: ChatEventDat
     },
   }
   const result = await postFetch(body, url)
+  console.log(result)
   resultControl(module, result)
 }
 export const chatRate = async (module: DialogLanguageModule, data: ChatRateData) => {

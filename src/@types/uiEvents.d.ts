@@ -2,6 +2,7 @@ export interface SendMessageData {
   text: string
   sender: 'user' | 'request'
   showRate: boolean
+  module: string
 }
 export type UIManagmentEvents =
   | 'setUpSender'

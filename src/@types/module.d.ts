@@ -1,15 +1,23 @@
-import { SendMessageData, UiEventsData, UiEventsNames, UIManagmentEvents, UIManagmentData, ModulesEvents, ModulesData, NotificationsData } from './uiEvents'
+import {
+  SendMessageData,
+  UiEventsData,
+  UiEventsNames,
+  UIManagmentEvents,
+  UIManagmentData,
+  ModulesEvents,
+  ModulesData,
+  NotificationsData,
+} from './uiEvents'
 import { ModuleEventData, SetInfoData, ChatInitData, ChatEventData, ChatRequestData } from './moduleEvents'
 
 export interface ModuleEvents {
   chatRequest: (module: CKModule, data: RandomData) => void
 }
 export interface UiEventsList {
-  sendMessage?: (data: SendMessageData) => void
-  uiManagment?: (uiManagmentEvent: UIManagmentEvents, data: UIManagmentData) => void
-  notifications?: (notificationsEvent: NotificationsEvents, data: NotificationsData) => void
-  modules?: (modulesEvent: ModulesEvents , data: ModulesData)=> void
-
+  sendMessage?: (data: SendMessageData, ckStore?: any) => void
+  uiManagment?: (uiManagmentEvent: UIManagmentEvents, data: UIManagmentData, ckStore?: any) => void
+  notifications?: (notificationsEvent: NotificationsEvents, data: NotificationsData, ckStore?: any) => void
+  modules?: (modulesEvent: ModulesEvents, data: ModulesData, ckStore?: any) => void
 }
 export interface CKModule {
   name: string
